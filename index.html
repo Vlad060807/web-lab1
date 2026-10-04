@@ -1,155 +1,99 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Лабораторна робота №1 з дисципліни Інтернет-технології">
-    <meta name="author" content="Владислав Ільєнков">
-    <title>Лабораторна робота №1 | Варіант 1</title>
+  <meta charset="utf-8">
+  <title>Лабораторна робота 1. HTML</title>
 </head>
 <body>
-
-    <header>
-        <img src="images/logo.png" alt="Логотип університету" width="80">
-        <h1>Лабораторна робота №1</h1>
-        <p>Тема: Основи побудови та публікації HTML-документів</p>
-    </header>
-
-    <nav id="top">
-        <h2>Зміст сторінки</h2>
-        <ul>
-            <li><a href="#text-section">1. Математичне твердження (оформлений текст)</a></li>
-            <li><a href="#list-section">2. Структура університету (багаторівневий список)</a></li>
-            <li><a href="#table-section">3. Курс валют (таблиця)</a></li>
-            <li><a href="#form-section">4. Опитування (форма для голосування)</a></li>
-        </ul>
+  <header>
+    <h1>Лабораторна робота: HTML</h1>
+    <nav>
+      <ul>
+        <li><a href="#text">Оформлений текст</a></li>
+        <li><a href="#list">Структура університету</a></li>
+        <li><a href="#table">Курс валют</a></li>
+        <li><a href="#form">Голосування</a></li>
+      </ul>
     </nav>
-
-    <main>
-        <!-- Розділ 1: Оформлений текст за варіантом 1 -->
-        <section id="text-section">
-            <hr>
-            <h2>1. Теорема Ферма (Оформлений текст)</h2>
-            <p>
-                Для будь-якого натурального числа <b>n&gt;2</b> рівняння 
-                <i>a<sup>n</sup></i> + <i>b<sup>n</sup></i> = <i>c<sup>n</sup></i> 
-                <b>не має рішень</b> при цілих ненульових числах <i>a</i>, <i>b</i>, <i>c</i>.
-            </p>
-            <p><a href="#top">&uarr; Повернутися до змісту</a></p>
-        </section>
-
-        <!-- Розділ 2: Багаторівневий список за варіантом 1 -->
-        <section id="list-section">
-            <hr>
-            <h2>2. Структура університету (Багаторівневий список)</h2>
-            <p>Нижче наведено розподіл структурних підрозділів за факультетами та кафедрами:</p>
-            
-            <ul>
-                <li>
-                    Факультет комп'ютерної інженерії та управління (КІУ)
-                    <ul>
-                        <li>Кафедра електронних обчислювальних машин (ЕОМ)</li>
-                        <li>Кафедра комп'ютерних інтелектуальних технологій та систем (КІТС)</li>
-                        <li>Кафедра безпеки інформаційних технологій (БІТ)</li>
-                    </ul>
-                </li>
-                <li>
-                    Факультет інформаційно-аналітичних технологій та менеджменту (ІТМ)
-                    <ul>
-                        <li>Кафедра вищої математики (ВМ)</li>
-                        <li>Кафедра інформатики (ІНФ)</li>
-                        <li>Кафедра прикладної математики (ПМ)</li>
-                    </ul>
-                </li>
-                <li>
-                    Факультет автоматики і комп'ютеризованих технологій (АКТ)
-                    <ul>
-                        <li>Кафедра проектування та експлуатації електронних апаратів (ПЕЕА)</li>
-                        <li>Кафедра комп'ютерно-інтегрованих технологій, автоматизації та мехатроніки (КІТАМ)</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <p><a href="#top">&uarr; Повернутися до змісту</a></p>
-        </section>
-
-        <!-- Розділ 3: Таблиця за варіантом 1 -->
-        <section id="table-section">
-            <hr>
-            <h2>3. Курс валют (Таблиця)</h2>
-            <table border="1" cellpadding="6" cellspacing="0">
-                <caption><b>Моніторинг готівкового курсу основних валют</b></caption>
-                <thead>
-                    <tr>
-                        <th rowspan="2">Код</th>
-                        <th rowspan="2">Валюта</th>
-                        <th colspan="2">Комерційний курс (грн)</th>
-                        <th rowspan="2">Курс НБУ (грн)</th>
-                    </tr>
-                    <tr>
-                        <th>Купівля</th>
-                        <th>Продаж</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr align="center">
-                        <td>USD</td>
-                        <td align="left">Долар США</td>
-                        <td>41.20</td>
-                        <td>41.75</td>
-                        <td>41.45</td>
-                    </tr>
-                    <tr align="center">
-                        <td>EUR</td>
-                        <td align="left">Євро</td>
-                        <td>45.10</td>
-                        <td>45.85</td>
-                        <td>45.38</td>
-                    </tr>
-                    <tr align="center">
-                        <td>PLN</td>
-                        <td align="left">Польський злотий</td>
-                        <td>10.50</td>
-                        <td>10.90</td>
-                        <td>10.68</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <p><a href="#top">&uarr; Повернутися до змісту</a></p>
-        </section>
-
-        <!-- Розділ 4: Форма голосування за варіантом 1 -->
-        <section id="form-section">
-            <hr>
-            <h2>4. Опитування (Форма для голосування)</h2>
-            <form action="#">
-                <p><b>Оберіть ваш основний веб-браузер:</b></p>
-                
-                <input type="radio" id="chrome" name="browser" value="chrome" checked>
-                <label for="chrome">Google Chrome</label><br>
-                
-                <input type="radio" id="firefox" name="browser" value="firefox">
-                <label for="firefox">Mozilla Firefox</label><br>
-                
-                <input type="radio" id="opera" name="browser" value="opera">
-                <label for="opera">Opera</label><br>
-                
-                <input type="radio" id="edge" name="browser" value="edge">
-                <label for="edge">Microsoft Edge</label><br><br>
-                
-                <input type="submit" value="Голосувати">
-                <input type="reset" value="Скинути">
-            </form>
-
-            <p><a href="#top">&uarr; Повернутися до змісту</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <hr>
-        <p>&copy; 2026 Владислав Ільєнков. Всі права захищено.</p>
-    </footer>
-
+  </header>
+ 
+  <main>
+    <section id="text">
+      <p>Для будь-якого натурального числа <b>n&gt;2</b> рівняння
+        <i>a</i><sup><i>n</i></sup>+<i>b</i><sup><i>n</i></sup>=<i>c</i><sup><i>n</i></sup>
+        <b>не має рішень</b> при цілих ненульових числах <i>a</i>, <i>b</i>, <i>c</i>.</p>
+    </section>
+ 
+    <section id="list">
+      <ul>
+        <li>Факультет комп'ютерної інженерії та управління (КІУ)
+          <ul>
+            <li>Кафедра електронних обчислювальних машин (ЕОМ)</li>
+            <li>Кафедра комп'ютерних інтелектуальних технологій та систем (КІТС)</li>
+            <li>Кафедра безпеки інформаційних технологій (БІТ)</li>
+          </ul>
+        </li>
+        <li>Факультет інформаційно-аналітичних технологій та менеджменту (ІТМ)
+          <ul>
+            <li>Кафедра вищої математики (ВМ)</li>
+            <li>Кафедра інформатики (ІНФ)</li>
+            <li>Кафедра прикладної математики (ПМ)</li>
+          </ul>
+        </li>
+        <li>Факультет автоматики і комп'ютеризованих технологій (АКТ)
+          <ul>
+            <li>Кафедра проектування та експлуатації електронних апаратів (ПЕЕА)</li>
+            <li>Кафедра комп'ютерно-інтегрованих технологій, автоматизації та мехатроніки (КІТАМ)</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+ 
+    <section id="table">
+      <table border="1">
+        <tr>
+          <th>Валюта</th>
+          <th>Купівля</th>
+          <th>Продаж</th>
+          <th>Курс НБУ</th>
+        </tr>
+        <tr>
+          <td>USD</td>
+          <td>44,71308</td>
+          <td>45,21691</td>
+          <td>44,8333</td>
+        </tr>
+        <tr>
+          <td>EUR</td>
+          <td>50,43532</td>
+          <td>51,11354</td>
+          <td>50,6975</td>
+        </tr>
+        <tr>
+          <td>PLN</td>
+          <td>11,36299</td>
+          <td>11,787</td>
+          <td>11,5933</td>
+        </tr>
+      </table>
+    </section>
+ 
+    <section id="form">
+      <form action="#" method="post">
+        <p>Який браузер Вам подобається більше?</p>
+        <p><input type="radio" id="b1" name="browser" value="chrome" checked>
+          <label for="b1">Google Chrome</label></p>
+        <p><input type="radio" id="b2" name="browser" value="firefox">
+          <label for="b2">Mozilla Firefox</label></p>
+        <p><input type="radio" id="b3" name="browser" value="edge">
+          <label for="b3">Microsoft Edge</label></p>
+        <p><input type="radio" id="b4" name="browser" value="safari">
+          <label for="b4">Safari</label></p>
+        <p><input type="radio" id="b5" name="browser" value="opera">
+          <label for="b5">Opera</label></p>
+        <p><button type="submit">Проголосувати</button></p>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
